@@ -1366,7 +1366,7 @@ export default function App() {
               {/* Google Map Embedded iframe targeting Thumukunta */}
               <iframe
                 id="clinical-google-map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.8827988352605!2d78.55246731535091!3d17.56064798797437!2m3!1f0!2f0!3f0!3m2!1i1024!2i1024!2m3!1s0x3bcb8338df3f24bf%3A0xe97914083d65b74c!2sSKY%20DENTAL%20AESTHETICS!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
+                src="https://maps.google.com/maps?q=SKY%20DENTAL%20AESTHETICS%20Thumukunta%20Secunderabad%20Telangana&t=&z=16&ie=UTF8&iwloc=&output=embed"
                 className="w-full h-full border-0 filter saturate-[0.9] group-hover:scale-[1.01] transition-transform duration-700"
                 allowFullScreen={false}
                 loading="lazy"

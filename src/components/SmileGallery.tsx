@@ -2,14 +2,22 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Sparkles, ArrowLeftRight, CheckCircle } from 'lucide-react';
 
+// Import Assets
+import veneersBefore from '../assets/images/veneers_before_1780761425995.png';
+import veneersAfter from '../assets/images/veneers_after_1780761440028.png';
+import whiteningBefore from '../assets/images/whitening_before_1780761454203.png';
+import whiteningAfter from '../assets/images/whitening_after_1780761467001.png';
+import orthoBefore from '../assets/images/ortho_before_1780761482089.png';
+import orthoAfter from '../assets/images/ortho_after_1780761493486.png';
+
 const TRANSFORMATIONS = [
   {
     id: 'veneers',
     tabName: 'Porcelain Makeover',
     title: 'Porcelain Veneers & Alignment',
     description: 'Correction of chips, spacing, and severe discoloration for a symmetrical aesthetic.',
-    beforeImg: '/src/assets/images/veneers_before_1780761425995.png',
-    afterImg: '/src/assets/images/veneers_after_1780761440028.png',
+    beforeImg: veneersBefore,
+    afterImg: veneersAfter,
     details: ['100% Custom E-Max Veneers', 'Enhanced Symmetry', 'Gum Contour Lift', 'Completed in 2 Visits']
   },
   {
@@ -17,8 +25,8 @@ const TRANSFORMATIONS = [
     tabName: 'Laser Whitening',
     title: 'Laser Teeth Whitening',
     description: 'Removal of deep-set stains from coffee, tea, and aging, bringing back pristine whiteness.',
-    beforeImg: '/src/assets/images/whitening_before_1780761454203.png',
-    afterImg: '/src/assets/images/whitening_after_1780761467001.png',
+    beforeImg: whiteningBefore,
+    afterImg: whiteningAfter,
     details: ['8 Shades Brighter in 45 Mins', 'Zoom! In-Office Technology', 'Zero Sensitivity Formula', 'Protective Enamel Shield']
   },
   {
@@ -26,8 +34,8 @@ const TRANSFORMATIONS = [
     tabName: 'Invisalign Aligners',
     title: 'Modern Invisalign / Braces',
     description: 'Correcting complex bite issues, overcrowding, and deep overbites comfortably.',
-    beforeImg: '/src/assets/images/ortho_before_1780761482089.png',
-    afterImg: '/src/assets/images/ortho_after_1780761493486.png',
+    beforeImg: orthoBefore,
+    afterImg: orthoAfter,
     details: ['Virtually Invisible aligners', 'Custom 3D Smile Mapping', '30% Faster Treatment Times', 'Perfect Bite Alignment']
   }
 ];

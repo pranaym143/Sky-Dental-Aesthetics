@@ -47,6 +47,12 @@ import InteractiveSmile from './components/InteractiveSmile';
 import SmileGallery from './components/SmileGallery';
 import BookingDashboard from './components/BookingDashboard';
 
+// Import Assets
+import clinicInteriorImage from './assets/images/sky_clinic_interior_1780760902352.png';
+import dentistPortraitImage from './assets/images/sky_dentist_portrait_1780760887316.png';
+import smilePatientImage from './assets/images/sky_smile_patient_1780760870971.png';
+import skyPremiumClinicImage from './assets/images/sky_premium_clinic_1780819776014.png';
+
 // Generate dynamic icons map for services & features
 const iconMap: Record<string, React.ComponentType<any>> = {
   Sparkles,
@@ -519,7 +525,7 @@ export default function App() {
               {/* Back Image (Prisine Interior) */}
               <div className="absolute top-10 left-0 w-[65%] aspect-[1/1] rounded-3xl overflow-hidden border-2 border-white/10 shadow-2xl filter brightness-[0.8]">
                 <img
-                  src="/src/assets/images/sky_clinic_interior_1780760902352.png"
+                  src={clinicInteriorImage}
                   alt="Sky Dental Aesthetics Interior"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -529,7 +535,7 @@ export default function App() {
               {/* Middle Image (Friendly Surgeon Dentist Abhishek/Vinay) */}
               <div className="absolute bottom-4 left-4 w-[65%] aspect-[1/1] rounded-3xl overflow-hidden border-4 border-slate-900 shadow-2xl z-10 hover:scale-105 transition-transform duration-300">
                 <img
-                  src="/src/assets/images/sky_dentist_portrait_1780760887316.png"
+                  src={dentistPortraitImage}
                   alt="Doctor Abhishek Sky Dental"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -542,7 +548,7 @@ export default function App() {
               {/* Foreground Hero Image (Happy smiling patient) */}
               <div className="absolute top-0 right-0 w-[72%] aspect-[1/1] rounded-3.5xl overflow-hidden border-4 border-cyan-400 shadow-[0_20px_50px_rgba(6,182,212,0.25)] z-20 hover:scale-105 transition-transform duration-300">
                 <img
-                  src="/src/assets/images/sky_smile_patient_1780760870971.png"
+                  src={smilePatientImage}
                   alt="Smiling Patient Sky Dental"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -595,7 +601,7 @@ export default function App() {
             <div className="relative group p-1.5 bg-slate-50 border border-slate-200/60 rounded-3xl shadow-xl overflow-hidden">
               <div className="relative aspect-[4/3] rounded-2.5xl overflow-hidden bg-slate-900 border-2 border-white">
                 <img
-                  src="/src/assets/images/sky_clinic_interior_1780760902352.png"
+                  src={skyPremiumClinicImage}
                   alt="Sky Dental Aesthetics clinic"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-[0.9]"
                   referrerPolicy="no-referrer"
